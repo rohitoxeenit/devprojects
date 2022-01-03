@@ -1,0 +1,285 @@
+<?php
+/**
+ * Bloom functions and definitions
+ *
+ * @link https://developer.wordpress.org/themes/basics/theme-functions/
+ *
+ * @package WordPress
+ * @subpackage Bloom
+ * @since Bloom 1.0
+ */
+/**
+ * Bloom only works in WordPress 4.7 or later.
+ */
+ add_theme_support( 'post-thumbnails' );
+ add_post_type_support( 'themes', 'thumbnail' );
+ 
+ /********** Customized Header Menu Implementation ***********/
+ // This theme uses wp_nav_menu() in two locations.  
+	register_nav_menus( array(  
+	'primary' => __( 'Primary Navigation', 'bloom' ),  
+	'secondary' => __('Secondary Navigation', 'bloom')  
+	) ); 
+	
+/**
+ * Register widget areas.
+ *
+ * @since Bloom 1.0
+ *
+ * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
+ */
+function bloom_sidebar_registration() {
+
+	// Arguments used in all register_sidebar() calls.
+	$shared_args = array(
+		'before_title'  => '<h2 class="widget-title subheading heading-size-3">',
+		'after_title'   => '</h2>',
+		'before_widget' => '<div class="widget %2$s"><div class="widget-content">',
+		'after_widget'  => '</div></div>',
+	);
+
+	// Footer #1.
+	register_sidebar(
+		array_merge(
+			$shared_args,
+			array(
+				'name'        => __( 'Footer #1', 'bloom' ),
+				'id'          => 'sidebar-1',
+				'description' => __( 'Widgets in this area will be displayed in the first column in the footer.', 'bloom' ),
+			)
+		)
+	);
+
+	// Footer #2.
+	register_sidebar(
+		array_merge(
+			$shared_args,
+			array(
+				'name'        => __( 'Footer #2', 'bloom' ),
+				'id'          => 'sidebar-2',
+				'description' => __( 'Widgets in this area will be displayed in the second column in the footer.', 'bloom' ),
+			)
+		)
+	);
+	
+	// Footer #3.
+	register_sidebar(
+		array_merge(
+			$shared_args,
+			array(
+				'name'        => __( 'Footer #3', 'bloom' ),
+				'id'          => 'sidebar-3',
+				'description' => __( 'Widgets in this area will be displayed in the second column in the footer.', 'bloom' ),
+			)
+		)
+	);
+	register_sidebar(
+		array_merge(
+			$shared_args,
+			array(
+				'name'        => __( 'Footer #4', 'bloom' ),
+				'id'          => 'sidebar-4',
+				'description' => __( 'Widgets in this area will be displayed in the second column in the footer.', 'bloom' ),
+			)
+		)
+	);
+
+}
+
+add_action( 'widgets_init', 'bloom_sidebar_registration' );
+
+add_action( 'admin_init', 'hide_editor' );
+function hide_editor() {
+  $post_id = $_GET['post'] ? $_GET['post'] : $_POST['post_ID'] ;
+  if( !isset( $post_id ) ) return;
+  $about = get_the_title($post_id);
+  $contact = get_the_title($post_id);
+  if($about == 'Donate'){ 
+    remove_post_type_support('page', 'editor');
+  }
+}
+
+
+/****************** css enque using function ********************/
+
+// Load the theme stylesheets
+function custom_theme_styles(){ 
+	// Load all of the styles that need to appear on all pages
+	wp_enqueue_style( 'main', get_template_directory_uri() . '/style.css' );
+	wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css' );
+	//wp_enqueue_style( 'fontawesome', get_template_directory_uri() . '/css/fontawesome_pro.css' );
+	wp_enqueue_style( 'custom', get_template_directory_uri() . '/css/style.css' );
+	wp_enqueue_style( 'responsive', get_template_directory_uri() . '/css/responsive.css' );
+}
+add_action('wp_enqueue_scripts', 'custom_theme_styles');
+
+//Load the theme js files
+function custom_js_files()
+{
+	// Load all of the js that need to appear on all pages
+	/*wp_enqueue_script( 'js-min', get_template_directory_uri() . '/js/jquery-1.2.6.min.js');
+	wp_enqueue_script( 'js-slim', get_template_directory_uri() . '/js/jquery-3.2.1.slim.min.js');
+	wp_enqueue_script( 'js-popper', get_template_directory_uri() . '/js/popper.min');
+	wp_enqueue_script( 'js-bootstrap', get_template_directory_uri() . '/js/bootstrap.min.js');
+	wp_enqueue_script( 'js-bootstrap', get_template_directory_uri() . '/js/custom.js');*/
+	// Load all of the js that need to appear on all pages
+	wp_enqueue_script( 'js-min', get_template_directory_uri() . '/js/jquery-3-min.js');
+	//wp_enqueue_script( 'js-min', 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js');
+	wp_enqueue_script( 'js-popper', get_template_directory_uri() . '/js/popper.min');
+	wp_enqueue_script( 'js-bootstrap', get_template_directory_uri() . '/js/bootstrap.min.js');
+	wp_enqueue_script( 'js-custom', get_template_directory_uri() . '/js/custom.js');
+}
+add_action('wp_enqueue_scripts', 'custom_js_files');
+
+/********** Custom Educator Menu Structure ************/
+add_action('admin_menu', 'admin_menu_add_external_links_as_submenu');
+
+function admin_menu_add_external_links_as_submenu() {
+    global $submenu;
+	$menu_slug = "externallink"; 
+    $menu_pos = 32; 
+	add_menu_page( 'external_link', 'Educator', 'read', $menu_slug, '', '', $menu_pos);
+	$submenu[$menu_slug][] = array('Programs', 'manage_options', 'post.php?post=799&action=edit');
+    $submenu[$menu_slug][] = array('Music & Movement', 'manage_options', 'post.php?post=800&action=edit');
+    $submenu[$menu_slug][] = array('Dance', 'manage_options', 'post.php?post=801&action=edit');
+    $submenu[$menu_slug][] = array('Our Teachers', 'manage_options', 'post.php?post=802&action=edit');
+    $submenu[$menu_slug][] = array('Pricing', 'manage_options', 'post.php?post=803&action=edit');
+    $submenu[$menu_slug][] = array('Next Steps', 'manage_options', 'post.php?post=805&action=edit');
+}
+
+
+function wpse28782_remove_menu_items() {
+    //if( !current_user_can( 'administrator' ) ):
+        remove_menu_page( 'edit.php?post_type=i_am_educator' );
+    //endif;
+}
+add_action( 'admin_menu', 'wpse28782_remove_menu_items' );
+
+/*********** Form Section Using Ajax****************/
+function get_volunteer_form_data() {
+	global $wpdb;
+	$prefix = $wpdb->prefix;
+	if(!empty($_POST['formdata'])){
+			parse_str($_POST['formdata'], $formdata);
+			$Sql_insert="insert into ".$prefix."volunteer_records set
+				volunteer_firstname ='".$formdata['firstname']."',
+				volunteer_lastname ='".$formdata['lastname']."',
+				volunteer_emailid ='".$formdata['emailid']."',
+				volunteer_phoneno ='".$formdata['phone']."',
+				volunteer_interests ='".json_encode($formdata['Interests'])."',
+				other_Interests ='".$formdata['other_Interests']."',
+				volunteer_lookingto_volunteer ='".$formdata['phone']."',
+				volunteer_liketo_volunteer ='".json_encode($formdata['liketovolunteer'])."',
+				volunteer_created ='".date('Y-m-d')."'
+			";
+			$result = $wpdb->query($Sql_insert);
+			if($result){
+				echo 1;
+			}
+		}
+	wp_die();
+}
+add_action( 'wp_ajax_nopriv_get_volunteer_form_data', 'get_volunteer_form_data' );
+add_action( 'wp_ajax_get_volunteer_form_data', 'get_volunteer_form_data' );
+
+
+/********** End Here******************************/
+
+
+
+/***********Contact Form Section Using Ajax****************/
+function get_contact_form_data() {
+
+	/*echo"<pre>";
+	print_r($_FILES);
+	print_r($_POST['action']);
+	print_r($_POST);
+	print_r($_POST['formdata']);
+
+	parse_str($_POST['formdata'], $formdata);
+
+	print_r($formdata);
+	//die();
+	*/
+	global $wpdb;
+	$prefix = $wpdb->prefix;
+
+	$arr_img_ext = array('image/png', 'image/jpeg', 'image/jpg', 'image/gif');
+    if (in_array($_FILES['attachments']['type'], $arr_img_ext)) {
+        $attachmentimg = wp_upload_bits($_FILES["attachments"]["name"], null, file_get_contents($_FILES["attachments"]["tmp_name"]));
+        //echo "<pre>"; print_r($attachmentimg); die;
+        //$upload['url'] will gives you uploaded file path
+    }
+
+
+	if(!empty($_POST['formdata'])){
+			parse_str($_POST['formdata'], $formdata);
+			 $Sql_insert="insert into ".$prefix."contact set
+				contact_firstname ='".$formdata['firstname']."',
+				contact_secondname ='".$formdata['lastname']."',
+				contact_emailid ='".$formdata['emailid']."',
+				contact_phoneno ='".$formdata['phone']."',
+				contact_school_org ='".$formdata['schoolorg']."',
+				contact_topic_interest ='".$formdata['topicinst']."',
+				contact_attachment ='".$_FILES["attachments"]["name"]."',
+				contact_message ='".$formdata['messagebox']."',				
+				contact_created ='".date('Y-m-d')."'
+			";
+			$result = $wpdb->query($Sql_insert);
+			if($result){
+				echo 1;
+			}
+		}
+	wp_die();
+}
+add_action( 'wp_ajax_nopriv_get_contact_form_data', 'get_contact_form_data' );
+add_action( 'wp_ajax_get_contact_form_data', 'get_contact_form_data' );
+
+
+/********** End Here******************************/
+
+
+/*********** Form Section Using Ajax****************/
+function get_teacher_form_data() {
+	// echo"<pre>"; 
+	// print_r($_FILES);
+	// print_r($_POST);
+	// print_r($_POST['formdata']);
+	//  die;
+	global $wpdb;
+	$prefix = $wpdb->prefix;
+
+	$arr_img_ext = array('image/png', 'image/jpeg', 'image/jpg', 'image/gif');
+    if (in_array($_FILES['inputResume']['type'], $arr_img_ext)) {
+        $attachmentimg = wp_upload_bits($_FILES["inputResume"]["name"], null, file_get_contents($_FILES["inputResume"]["tmp_name"]));
+        //echo "<pre>"; print_r($attachmentimg); die;
+        //$upload['url'] will gives you uploaded file path
+    }
+
+	if(!empty($_POST['formdata'])){
+			parse_str($_POST['formdata'], $formdata);
+			$Sql_insert="insert into ".$prefix."teachers_application set
+				teachers_firstname ='".$formdata['inputFirstName']."',
+				teachers_lastname ='".$formdata['inputLastName']."',
+				teachers_emailid ='".$formdata['inputEmail1']."',
+				teachers_phoneno ='".$formdata['inputPhone']."',
+				teachers_are_you_interested ='".json_encode($formdata['inputInterestTeaching'])."',
+				inputInterestTeachingOther ='".$formdata['inputInterestTeachingOther']."',
+				teachers_age_range ='".json_encode($formdata['inputInterestAgeRange'])."',
+				teachers_type_of_job ='".json_encode($formdata['inputJobLooking'])."',
+				inputJobLookingOther ='".$formdata['inputJobLookingOther']."',
+				teachers_resume_attchement ='".$_FILES["inputResume"]["name"]."',
+				teachers_created ='".date('Y-m-d')."'
+			";
+			$result = $wpdb->query($Sql_insert);
+			if($result){
+				echo 1;
+			}
+		}
+	wp_die();
+}
+add_action( 'wp_ajax_nopriv_get_teacher_form_data', 'get_teacher_form_data' );
+add_action( 'wp_ajax_get_teacher_form_data', 'get_teacher_form_data' );
+
+
+/********** End Here******************************/

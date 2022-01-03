@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+* {padding: 0;margin: 0;box-sizing: border-box;font-family: 'Poppins', sans-serif;outline: 0 !important;}
+body {background-color: #f8f7f3; scroll-behavior:smooth;}
+
+/* Common CSS */
+h1,h2,h3,h4,h5,h6,p,ul {margin: 0;}
+h1,.h1 {font-weight: bold;}
+a,a:hover {text-decoration: none;}
+ul {list-style: none;}
+.main-color {color: #86ba51 !important;}
+.main-color2 {color: #3f3f3f !important;}
+.main-color3 {color: #868686;}
+.main-btn1 {color: #86ba51 !important;background-color: transparent;border: 1px solid #86ba51 !important;text-align: center;display: block;padding: 13px 10px;border-radius: 7px;cursor: pointer;}
+.main-btn2 {color: #fff !important;background-color: #86ba51;border: 1px solid #86ba51 !important;text-align: center;display: block;padding: 13px 10px;border-radius: 7px;width: 210px;cursor: pointer}
+
+input::placeholder, select::placeholder {color:#d0d2cd;}
+input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner-spin-button {-webkit-appearance: none;margin: 0;}
+input[type=number] {-moz-appearance:textfield;}
+input.invalid {background-color: #ffdddd}
+.form-group {position: relative;margin-bottom: 0.5rem;}
+.form-control:focus {box-shadow: none;}
+select.form-control:not([size]):not([multiple]) {height: auto;}
+.arrow-left {width: 0; height: 0;border-top: 5px solid transparent;border-bottom: 5px solid transparent;border-left:10px solid #86ba51;}
+
+/* Start Slick Carousel Setting */
+.slick-arrow {position: absolute;top: 50%;z-index: 998;width: 25px;height: 25px;cursor: pointer;}
+.slick-prev {background-image: url('../img/left-arrow-icon.png');background-repeat: no-repeat;left: 0;}
+.slick-next {background-image: url('../img/right-arrow-icon.png');background-repeat: no-repeat;right: 0;}
+.slick-dots {display: flex;list-style: none;justify-content: center;margin-top: 30px;}
+.slick-dots li button {display: block;width: 1.25rem;height: 1.25rem;padding: 0;border: none;border-radius: 100%;background-color: #86ba51;text-indent: -9999px;margin: 0 15px;}
+/* End Slick Carousel Setting */
+
+/********************************* Start Navbar CSS *********************************/
+
+.navbar-brand img {width: 100px;}
+.bg-light {background-color: #f0efef !important;border-bottom: 1px solid #a0c577;}
+.navbar-expand-lg .navbar-nav .nav-link {margin-left: 1.5rem;color: #86ba51;font-size: 18px;}
+.navbar-light .navbar-nav .active > .nav-link, .navbar-expand-lg .navbar-nav .nav-link:hover {color: #86ba51;}
+.navbar-expand-lg .navbar-nav .nav-link.main-btn1, .navbar-expand-lg .navbar-nav .nav-link.main-btn2 {width: 100px;border-radius: 3px;padding: .5rem;}
+
+/********************************* End Navbar CSS *********************************/
+
+/********************************* Start Home Page CSS *********************************/
+
+/* Start Homepage Banner CSS */
+.h-banner {padding: 110px 0 120px;background-image: url('../img/banner-img.png');background-repeat: no-repeat;background-position: right;}
+.big-text {font-size: 46px;}
+.h-banner p {font-size: 18px;}
+.b-search, .b-search:focus {width: 100% !important;padding: 10px 15px;border: 2px solid #86ba51;border-radius: 7px;}
+.search-btn {position: absolute;right: 16px;background: transparent;padding: 7px 10px;}
+.search-btn img {width: 80%;}
+/* End Homepage Banner CSS */
+
+/* Start Homepage Details Tab CSS */
+.details-tab {background-color: #eafdf1;padding: 90px 0 100px;position: relative;}
+.details-tab .nav-link {margin: 0 30px;color: #86ba51;font-size: 24px;padding: .5rem 0.5rem;}
+.details-tab .nav-link.active,.details-tab .nav-link:hover {border-bottom: 4px solid #86ba51;}
+.details-tab .card-body {padding: 1.5rem;}
+.card-img {position: relative;display: flex;flex-direction: column;align-items: center;justify-content: center;text-align: center;}
+.hover-text {position: absolute;display: none;z-index: 1;}
+#h_courses .card:hover .card-img:after {content: '';background-color: #86ba5182;width: 100%;height: 100%;position: absolute;top: 0;left: 0;}
+#h_courses .card:hover .card-img .hover-text {display: block;}
+.message_btn {position: absolute;right: 0;top: 20%;background: #86ba51;padding: 10px;border-radius: 30px 0 0px 30px;}
+/* End Homepage Details Tab CSS */
+
+/* Start Homepage Join Now CSS */
+.h-join-now {padding: 70px 30px;background-color: #90c161;text-align: center;}
+.h-join-now a.h4 {background: #3f3f3f;color:#fff;padding: 15px 20px;width: 250px;display: block;margin: 0 auto;border-radius: 7px;}
+/* End Homepage Join Now CSS */
+
+/* Start Homepage How It Work CSS */
+.h-hi-work {padding: 100px 0 110px;}
+/* End Homepage How It Work CSS */
+
+.h-easy-find {background-color: #eafdf1;padding: 70px 0;}
+
+.h-members {padding: 50px 0;}
+
+.h-feedback {padding: 70px 0;background: url('../img/feedback-img.png') center / contain no-repeat ;position: relative;z-index: 0;}
+.h-feedback:before {content: '';position: absolute;width: 100%;height: 100%;background: rgba(0,0,0,0.7);top: 0;z-index: -1;}
+.c-feedback {text-align: center;color: #fff;display: flex;flex-direction: column;justify-content: center;align-items: center;}
+
+.h-faqs {padding: 70px 0;}
+.h-faqs .card {background-color: transparent;border: 0;border-bottom: 1px solid #ccc;border-radius: 0;}
+.h-faqs .card-header {padding: .75rem 0;background-color: transparent;border-bottom: 0;}
+.h-faqs .card-header button, .h-faqs .card-header button:hover, .h-faqs .card-header button:focus {color: #555;text-decoration: none;padding: 0;width: 100%;text-align: left;}
+.h-faqs .card-body {padding: 1.25rem 0;color: #7e7e7d;}
+.h-faqs .card-header img {position: absolute;right: 15px;transition: 0.5s;}
+.h-faqs .card-header button[aria-expanded="false"] img {transform: rotate(-90deg);transition: 0.5s;}
+
+/********************************* End Home Page CSS *********************************/
+
+/********************************* Start Registration CSS *********************************/
+
+button.close {position: absolute;top: 10px;right: 40px;font-size: 40px;z-index: 1;}
+.main-form {padding: 0 !important;}
+.main-form .modal-dialog-centered {min-height: 100vh;max-width: 100%;margin: 0;}
+.modal-content {border: 0;border-radius: 0;min-height: 100vh;}
+.main-form .modal-body {display: flex;align-items: center;justify-content: center;padding: 0;}
+
+.main-form-design {box-shadow: 0 0 15px 0 #00000021;border-radius: 20px;margin: 20px 0;}
+.tab {display: none}
+.thanks-message {display: none}
+.main-form-design .form-control {border: 0;border-bottom: 1px solid #d0d2cd;border-radius: 0;padding: 10px 30px;}
+.main-form-design .form-group label {position: absolute;bottom: 6px;z-index: 1;}
+.main-form-design .form-group label img {height: 16px;}
+.show-pass {position: absolute;right: 0;bottom: 14px;cursor: pointer;}
+#nextprevious {display: flex;justify-content: space-between;align-items: center;}
+.border-heading {position: relative;display: flex;justify-content: center;}
+.border-heading:before {content: '';width: 100%;height: 1px;background: #d0d2cd;position: absolute;left: 0;top: 50%;text-align: center;}
+.border-heading h5 {display: inline;background-color: #fff;padding: 0 20px;position: relative;}
+.google-signin {position: relative;}
+.google-signin img {position: absolute;left: 30px;}
+
+
+/********************************* End Registration CSS *********************************/
+
+/********************************* Start Tutor Listing CSS *********************************/
+
+.tutor-listing {padding-bottom: 80px;}
+.result-header {padding: 15px 0;}
+.listing-body {border: 1px solid #86ba51;border-radius: 5px;}
+.listing-body .main-btn1, .listing-body .main-btn2 {padding: 10px 5px;}
+.listing-item {padding: 20px;border-bottom: 1px solid #86ba51;background-color: #fff;}
+.rating-no {background: #86ba51;color: #fff;font-size: 12px;padding: 5px 10px;border-radius: 5px;position: relative;}
+.rating-no .arrow-left {position: absolute;right: -9px;top: 50%;transform: translateY(-50%);}
+.listing-item p {font-size: 14px;}
+.pagination .page-item {margin: 0 5px;}
+.page-link {color: #000;background-color: transparent;border: 1px solid #86ba51;width: 40px;height: 40px;text-align: center;}
+.page-item:first-child .page-link,.page-item:last-child .page-link {border-radius: 0;background-color: #86ba51;color: #fff;}
+.page-link:hover {color: #fff;background-color: #86ba51;border-color: #86ba51;}
+#sort_by {border-radius: 0.5rem;border-color: #86ba51;}
+
+.side-filter {border: 1px solid #86ba51;border-radius: 5px;background-color: #fff;}
+.side-filters-head {display: flex;justify-content: space-between;padding: 1rem;}
+.filters-items .collapse,.filters-items .collapsing {padding: 10px 0 0 !important;}
+.side-filter a, .side-filter a:hover {color: #000;}
+.filters-items {padding: 1rem;}
+.b-search, .b-search:focus {padding: 5px 80px 5px 10px;}
+.filters-items .search-btn {right: 0;background: #86ba51;height: 37.2px;}
+.search_sbtn {position: absolute;right: 50px;height: 37.2px;padding: 4px 10px;}
+
+.side-filters {width: 100%;padding: 10px 0;border-bottom: 1px solid #ccc;}
+.side-filters:last-child {border-bottom: 0;}
+.side-filter .card-body {background: #fff;border: 1px solid #86ba51;padding: 0;box-shadow: 0 0 8px 0 rgba(0,0,0,0.2);}
+.sf-btn {width: 100%;display: flex;position: relative;justify-content: space-between;align-items: center;padding: 10px 15px;}
+.sf-btn[aria-expanded="true"], .sf-btn[aria-expanded="true"]:hover {background-color: #86ba51;color: #fff;}
+.side-filter .form-group {margin-bottom: 0;}
+.side-filter .form-check input {display: none;}
+.side-filter .form-check {border-bottom: 1px solid #86ba51;padding: 5px 30px;}
+.side-filter .form-check:last-child {border-bottom: 0;}
+.side-filter .form-check label {padding-left: 15px;margin-bottom: 3px;font-size: 14px;cursor: pointer;}
+.side-filter .form-check label:before {content: '';border: 1px solid #86ba51;border-radius: 3px;font-size: 15px;width: 15px;height: 15px;padding: 0px;position: absolute;top: 10px;left: 15px;line-height: 13px;text-align: center;}
+.side-filter .form-check input:checked + label:before {content: '✓';background: #86ba51;color: #fff;}
+.side-filter > a > i {color: #000;transform: rotate(-90deg);transition: 0.5s;}
+.side-filter > a.sf-btn[aria-expanded="true"] > i {color: #fff;}
+a[aria-expanded="true"] > i, .main-btn[aria-expanded="true"] > i {transform: rotate(0);transition: .5s;}
+.csf {background: #86ba51;color: #fff;max-width: 170px;width: auto;display: inline-block;padding: 5px 28px 5px 6px;margin: 0 5px 5px 0;font-size: 13px;border-radius: 5px;position: relative;height: 25px;line-height: 15px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+.csf span {color: #fff;cursor: pointer;font-size: 12px;position: absolute;top: 0;right: 0;width: 25px;height: 25px;text-align: center;line-height: 25px;}
+
+.side-filter .collapse,.side-filter .collapsing {padding: 10px 15px;}
+#search_filter_list {padding: 10px 15px;}
+
+
+/********************************* End Tutor Listing CSS *********************************/
+
+/********************************* Start Footer CSS *********************************/
+
+footer {background-color: #3f3f3f;padding-top: 50px;color: #fff;}
+footer .ul-head {font-size: 18px;margin-bottom: 1.25rem;}
+footer ul li a, footer ul li a:hover {color: #fff;font-size: 16px;margin-bottom: 5px;display: block;}
+.newsletter {position: relative;}
+.newsletter .fa-envelope {position: absolute;left: 15px;top: 11px;font-size: 22px;}
+.newsletter input {background: #1e1e1e;color: #fff;border: 0;padding: 10px 10px 10px 50px;width: 100%;border-radius: 4px;}
+.submit_btn,.submit_btn:hover {position: absolute;right: 0;background: #85bb4b;color: #fff;padding: 10px 20px;border-radius: 0 4px 4px 0;}
+.footer-copyright {display: flex;justify-content: space-between;align-items: center;border-top: 1px solid #fff;padding: 20px 0;}
+.s-icons {display: flex;}
+.s-icons li a {display: block;background: #1e1e1e;border-radius: 100%;width: 40px;height: 40px;text-align: center;margin-left: 10px;line-height: 40px;}
+
+/********************************* End Footer CSS *********************************/

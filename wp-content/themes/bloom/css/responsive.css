@@ -1,0 +1,467 @@
+@media only screen and (min-width: 768px) {}
+
+@media only screen and (max-width: 1198.98px) {
+	.navbar-brand img {
+		width: 180px;
+	}
+	.navbar-expand-lg .navbar-nav .nav-link {
+		margin-left: 1.5rem;
+	}
+	.boxbtn {
+		height: 300px;
+	}
+	.boxbtn a,
+	.imgcontnentmbox {
+		font-size: 24px;
+	}
+}
+
+@media only screen and (max-width: 991.98px) {
+	.carousel-itembox h4 {
+		font-size: 40px;
+	}
+	.h-join-now h2.big-text,
+	.h-hi-work h2,
+	.h-hi-ourprogram h2,
+	.h-hi-street h2,
+	section.h-partners h2.big-text,
+	.h-partners h2.big-text,
+	section.iambody h2,
+	section.cbody h2,
+	section.studentpbody h2,
+	section.aboutbody.musicM h2 {
+		font-size: 30px;
+	}
+	section.studentpbody h4,
+	.h-partners h4,.4 {
+		font-size: 24px;
+	}
+	.h-hi-street p,
+	.iambox p,
+	.tabstyle1 p,
+	.aboutbody p,
+	.aboutbody ul li,
+	.row.tabstyle1 span,
+	.tabstyle1 ul li,
+	.h-hi-ourteam p,
+	.h-hi-street p {
+		font-size: 20px !important;
+	}
+	.h-join-now p,
+	label[for="attachments"],
+	label {
+		font-size: 16px;
+	}
+	.h-join-now p strong {
+		font-size: 20px;
+	}
+	.hibox a {
+		font-size: 14px;
+	}
+	.navbar-light .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+		background-image: url(../img/close.png);
+		width: 20px;
+		height: 20px;
+		margin-right: 4px;
+	}
+	.navbar-light .navbar-toggler {
+		border-color: transparent;
+		padding: 0;
+	}
+	.mc4wp-form-fields p label input {
+		width: 400px;
+	}
+	.main-footer {
+		right: 30px;
+	}
+	.main-footer .wp-block-group__inner-container>p>a {
+		font-size: 16px;
+	}
+	.footer-social a img {
+		height: 18px;
+	}
+	.navbar-expand-lg .navbar-nav .nav-link {
+		margin-left: 0;
+	}
+	.boxbtn {
+		height: 200px;
+	}
+	.boxbtn a,
+	.imgcontnentmbox {
+		font-size: 20px;
+	}
+	#list {
+        flex-direction: row !important;
+        flex-wrap: nowrap !important;
+        display: flex;
+        max-width: 100vw;
+        overflow-x: auto;
+        z-index: 101;
+        padding: 0 0 20px;
+    }
+    #list.scrolled {
+        position: fixed;
+        background: #fff;
+        top: 185px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 720px;
+        padding-left: 15px;
+    }
+    .eneducatorbody .nav-link span {
+        display: block;
+        width: max-content;
+    }
+    .eneducatorbody .nav-link {
+        position: relative;
+    }
+    
+    .scroll-div a.active:after {
+        content: '';
+        width: 100%;
+        height: 6px;
+        background: #032350;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        border-radius: 30px;
+    }
+    .top-breadcrub.en-edu-b.scrolled {
+        position: fixed;
+        top: 135px;
+        background: #fff;
+        width: 100%;
+        z-index: 101;
+    }
+    .eneducatorbody .nav-link {
+        padding: 0 20px 8px 0 !important;
+        margin-right: 10px;
+        font-size: 12px;
+    }
+    .top-breadcrub.en-edu-b p {
+        font-size: 12px;
+    }
+    .menu-mbtn {
+        display: block !important;
+    }
+    .navbar-expand-lg .navbar-nav .nav-link.main-btn1, .navbar-expand-lg .navbar-nav .nav-link.main-btn2 {
+        display: none;
+    }
+    .navbar-expand-lg .navbar-nav .nav-link:hover+.dropdown-menu, .navbar-expand-lg .dropdown-menu:hover {
+        display: none;
+    }
+    .navbar-expand-lg .navbar-nav .nav-link {
+        width: auto;
+        display: inline-block;
+    }
+    .navbar-expand-lg .dropdown {
+        position: relative;
+        overflow: hidden;
+    }
+    .navbar-expand-lg .dropdown:not(:nth-child(4)):after {
+        content: '';
+        height: 10px;
+        width: 10px;
+        border-style: solid;
+        border-color: #032350;
+        border-width: 0px 2px 2px 0px;
+        transform: rotate(-45deg);
+        position: absolute;
+        top: 17px;
+        right: 10px;
+        transition: .5s;
+    }
+    .navbar-expand-lg .dropdown.open:after {
+        transform: rotate(45deg);
+        transition: .5s;
+    }
+    .navbar-expand-lg .dropdown > .dropdown-menu {
+        width: 100%;
+        border: 0;
+        padding: 0;
+        padding-left: 20px;
+        transform: translateY(-100%);
+        transition: .5s;
+    }
+    .navbar-expand-lg .dropdown.open > .dropdown-menu {
+        display: block;
+        transform: translateY(0);
+        transition: .5s;
+    }
+    .navbar-expand-lg .navbar-nav .dropdown.open > .nav-link {
+        padding-bottom: 0 !important;
+    }
+}
+
+@media only screen and (max-width: 767.98px) {
+	input[type="checkbox"],
+	input[type="radio"] {
+		vertical-align: middle;
+	}
+	#demo img {
+		height: 300px !important;
+	}
+	.carousel-itembox {
+		position: absolute;
+		z-index: 1;
+		bottom: 0;
+		top: 15vh;
+		left: 10vh;
+	}
+	.carousel-itembox h4 {
+		color: #fff;
+		font-weight: 900;
+		font-size: 20px;
+	}
+	[class*="col-"]:not(:last-child) {
+		margin-bottom: 20px;
+	}
+	.h-join-now h2.big-text,
+	.h-hi-work h2,
+	.h-hi-ourprogram h2,
+	.h-hi-street h2,
+	section.h-partners h2.big-text,
+	.h-partners h2.big-text,
+	section.iambody h2,
+	section.cbody h2,
+	section.studentpbody h2,
+	section.aboutbody.musicM h2 {
+		font-size: 24px;
+	}
+	section.studentpbody h4,
+	.h-partners h4,.h4 {
+		font-size: 20px;
+	}
+	.h1,
+	h1 {
+		font-size: 1.5rem;
+	}
+	.h2,
+	h2 {
+		font-size: 1.35rem;
+	}
+	.h3,
+	h3 {
+		font-size: 1.3rem;
+	}
+	.h5,
+	h5 {
+		font-size: 1rem;
+	}
+	.h-hi-ourprogram .hiopbox h6 {
+		font-size: 18px;
+	}
+	.h-hi-work h6 {
+		ont-size: 14px;
+	}
+	body,
+	p,
+	.h-join-now p,
+	.h-join-now p strong,
+	.h-hi-street p,
+	label[for="attachments"],
+	label {
+		font-size: 14px;
+	}
+	.h-join-now p strong,
+	.iambox p,
+	.tabstyle1 p,
+	.aboutbody p,
+	.aboutbody ul li,
+	.row.tabstyle1 span,
+	.tabstyle1 ul li,
+	.h-hi-ourteam p,
+	.h-hi-street p {
+		font-size: 16px!important;
+	}
+	.h-hi-work a {
+		font-size: 20px;
+	}
+	.h-partners .form-inline {
+		width: 100%;
+	}
+	.h-partners .form-inline input {
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	footer p {
+		padding: 20px 40px 35px;
+	}
+	.navbar-brand img {
+		max-width: 200px;
+	}
+	.h-hi-street h2 {
+		font-size: 18px;
+	}
+	.carousel-control-next-icon,
+	.carousel-control-prev-icon {
+		width: 25px;
+		height: 25px;
+	}
+	.carousel-control-next,
+	.carousel-control-prev {
+		width: 10%;
+	}
+	.mc4wp-form-fields p label input {
+		width: 300px;
+	}
+	.main-footer .wp-block-group__inner-container>p>a {
+		font-size: 14px;
+	}
+	.footer-social a img {
+		height: 16px;
+	}
+	.iambox {
+		padding: 2rem 0;
+	}
+	.boxbtn {
+		height: 100px;
+	}
+	.boxbtn a,
+	.imgcontnentmbox {
+		font-size: 12px;
+	}
+	.form-group {
+		margin-bottom: 0;
+	}
+	p,
+	h4 {
+		line-height: 1.5rem !important;
+	}
+	.common-header h1 {
+		margin-bottom: 5px;
+	}
+	.common-header h4 {
+		font-size: 1rem;
+	}
+	h4 p {
+		margin-bottom: 1.5rem;
+	}
+	.mb-6 {
+		margin-bottom: 4rem !important;
+	}
+	section.cbody form input,
+	section.cbody form select,
+	section.cbody form textarea {
+		width: 100%;
+	}
+    /*.eneducatorbody .nav-link {*/
+    /*    padding: 0.9rem 1rem!important;*/
+    /*    font-size: 12px;*/
+    /*    font-weight: 500;*/
+    /*}*/
+    .common-header {
+        min-height: 200px;
+    }
+    #list.scrolled {
+        top: 190px;
+        width: 540px;
+    }
+    .page-id-595 input#submitform {
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (max-width: 575.98px) {
+	.h-join-now h2.big-text,
+	.h-hi-work h2,
+	.h-hi-ourprogram h2,
+	.h-hi-street h2,
+	section.h-partners h2.big-text,
+	.h-partners h2.big-text,
+	section.iambody h2,
+	section.cbody h2,
+	section.studentpbody h2 {
+		font-size: 20px;
+	}
+	section.studentpbody h4,
+	.h-partners h4,.contact-formb p,h4 {
+		font-size: 16px;
+	}
+	body,
+	p,
+	.h-join-now p,
+	.h-join-now p strong,
+	.h-hi-street p {
+		font-size: 16px;
+	}
+	.h-join-now p strong,
+	.iambox p,
+	.tabstyle1 p,
+	.aboutbody p,
+	.aboutbody ul li,
+	.row.tabstyle1 span,
+	.tabstyle1 ul li,
+	.h-hi-ourteam p,
+	.h-hi-street p,
+	label[for="attachments"],
+	label {
+		font-size: 16px !important;
+	}
+	.h-hi-work a {
+		font-size: 18px;
+	}
+	.h-hi-ourprogram,
+	.h-join-now,
+	.h-hi-work,
+	section.h-partners,
+	.h-hi-street,
+	.aboutbody .row,
+	.tabstyle1,
+	.musicM.aboutbody .row,
+	.h-hi-ourteam {
+		padding: 30px 0;
+	}
+	.mc4wp-form-fields p label input {
+		width: 180px;
+		margin-right: 5px;
+	}
+	.h-hi-street .main-btn1 {
+		padding: 5px;
+		font-size: 12px;
+	}
+	.main-footer {
+		right: 10px;
+	}
+	.mb-6 {
+		margin-bottom: 3rem !important;
+	}
+	.h-hi-ourteam p {
+		margin-bottom: 1rem;
+	}
+	.navbar-brand img {
+        max-width: 120px;
+    }
+    .nav-link.main-btn1 {
+        padding: 0.4rem 0.4rem !important;
+        font-size: 12px;
+    }
+    #list.scrolled {
+        top: 185px;
+        width: 100%;
+    }
+    .top-breadcrub.en-edu-b.scrolled {
+        top: 130px;
+    }
+    label[for="attachments"]:after, label[for="inputResume"]:after {
+        margin-left: 20px;
+    }
+    label[for="attachments"], label[for="inputResume"] {
+        margin-right: 0;
+        font-size: 14px !important;
+    }
+    .PaymentsTab .form-check .form-check-label {
+        border: 2px solid #fc6c21;
+        min-width: auto;
+        padding: 8px;
+    }
+    #teachersTab .main-btn1, .musicM .main-btn1 {
+        margin-left: 0;
+    }
+    section.cbody h2 {
+        margin-top: 0px;
+    }
+    .seprate input {
+        width: 170px !important;
+    }
+}

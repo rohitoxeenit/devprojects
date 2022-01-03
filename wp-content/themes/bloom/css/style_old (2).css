@@ -1,0 +1,796 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+	outline: 0 !important;
+	color: #032350;
+}
+
+body {
+	scroll-behavior: smooth;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+/* Common CSS */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+	margin: 0;
+}
+
+h1,
+.h1 {
+	font-weight: bold;
+}
+
+a,
+a:hover {
+	text-decoration: none;
+	color: #032350;
+}
+
+a:hover {
+	color: #FC6C21;
+}
+
+ul {
+	list-style: none;
+}
+
+.topsec,
+.middlebox {
+	background-color: #032350;
+}
+
+.main-color {
+	color: #032350 !important;
+}
+
+.topsec ul li {
+	width: auto;
+	display: flex;
+	color: #fff;
+	font-weight: 700;
+}
+
+.main-btn1 {
+	color: #FAFAFA !important;
+	background-color: #FC6C21;
+	border: 1px solid #FC6C21 !important;
+	text-align: center;
+	display: inline-block;
+	padding: 10px 30px;
+	border-radius: 5px;
+	cursor: pointer;
+	font-weight: 700;
+	margin-left: 1.5rem;
+}
+
+.bottom_head {
+	background: #fff;
+}
+
+.underline-link {
+	text-decoration: underline;
+	font-weight: 500;
+}
+
+.underline-link:hover {
+	text-decoration: underline;
+}
+
+.mb-6 {
+	margin-bottom: 6rem !important;
+}
+
+.w-90 {
+	width: 90%;
+}
+
+
+/********************************* Start Common CSS *********************************/
+
+.common-header {
+	background-color: #032350;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	min-height: 270px;
+}
+
+.common-header h1 {
+	font-weight: 800;
+}
+
+.fullbline {
+	width: 100%;
+	height: 1px;
+	background: rgba(0, 0, 0, 0.2);
+	position: absolute;
+	left: 0;
+}
+
+.text-underline {
+	padding-bottom: 2px;
+	border-bottom: 2px solid;
+}
+
+.font-weight-semibold {
+	font-weight: 600;
+}
+
+
+/********************************** End Common CSS **********************************/
+
+
+/********************************* Start Navbar CSS *********************************/
+
+.main-header {
+	position: sticky;
+	top: 0;
+	z-index: 999;
+}
+
+.nav-link {
+	padding: 0.9rem 1rem!important;
+}
+
+.nav-link.main-btn1 {
+	padding: 0.8rem 1rem !important;
+}
+
+.navbar-brand img {
+	width: auto;
+}
+
+.bg-light {
+	background-color: #FFFFFF !important;
+	border-bottom: 1px solid #FFFFFF;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+	margin-left: 2.5rem;
+	color: #032350;
+	font-size: 16px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-expand-lg .navbar-nav .nav-link:hover {
+	color: #FC6C21;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link.main-btn1,
+.navbar-expand-lg .navbar-nav .nav-link.main-btn2 {
+	border-radius: 5px;
+	padding: 0.8rem 2rem;
+}
+
+.navbar {
+	padding: 1.5rem !important;
+}
+
+.navbar-expand-lg .dropdown-menu {
+	width: 13rem;
+	top: 35px;
+	left: 2rem;
+	border: 0.5px solid #032350;
+	border-radius: 0.4rem;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:hover+.dropdown-menu,
+.navbar-expand-lg .dropdown-menu:hover {
+	display: block;
+}
+
+.navbar-expand-lg .dropdown-item {
+	padding: .25rem 0.75rem;
+	font-weight: 500;
+	color: #032350;
+}
+
+.navbar-expand-lg .dropdown-item:hover {
+	color: #FC6C21;
+	background-color: transparent;
+}
+
+.navbar-expand-lg .dropdown-toggle::after {
+	display: none;
+}
+
+
+/********************************* End Navbar CSS *********************************/
+
+
+/******************* START SLIDER **********************/
+
+#demo img {
+	height: 50vw !important;
+	object-fit: cover;
+}
+
+.carousel-itembox {
+	position: absolute;
+	z-index: 1;
+	bottom: 0;
+	top: 30vh;
+	left: 18vw;
+}
+
+.carousel-itembox h4 {
+	color: #fff;
+	font-weight: 800;
+	font-size: 48px;
+	margin-bottom: 25px;
+}
+
+.btnbox {
+	max-width: 160px;
+}
+
+.btnbox .main-btn1 {
+	margin-left: 0rem;
+	padding: 10px 15px;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+	opacity: 1!important;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+	width: 40px;
+	height: 40px;
+}
+
+
+/******************* END SLIDER **********************/
+
+
+/* Start Homepage Join Now CSS */
+
+.h-join-now {
+	padding: 70px 30px;
+	background-color: #032350;
+	text-align: center;
+}
+
+.h-join-now h2 {
+	color: #fff;
+	padding: 15px 20px;
+	display: block;
+	margin: 0 auto;
+	border-radius: 7px;
+}
+
+.h-join-now p {
+	color: #fff;
+	font-size: 18px;
+	line-height: 25px;
+	font-weight: 500;
+	margin-bottom: 15px;
+}
+
+.h-join-now p strong {
+	color: #fff;
+	font-size: 24px;
+	line-height: 26px;
+	font-weight: 700;
+}
+
+
+/* End Homepage Join Now CSS */
+
+
+/* Start Homepage Let Us Be Your Guide CSS */
+
+.h-hi-work {
+	padding: 55px 25px;
+	background: #fff;
+}
+
+
+/*.h-hi-work .hibox{background: linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(0deg, #FFFFFF, #FFFFFF), #FFFFFF;border: 5px solid #FC6C21;box-sizing: border-box;border-radius: 5px;}*/
+
+.hibox a {
+	font-size: 22px;
+	text-align: center;
+	color: #fff;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	margin: 0;
+	width: 80%;
+	font-weight: bold;
+	display: block;
+}
+
+.hibox img {
+	width: 100%;
+}
+
+
+/* End Homepage Let Us Be Your Guide CSS */
+
+
+/* Start Homepage Our Programs CSS */
+
+.h-hi-ourprogram {
+	padding: 55px 25px;
+	background: #f5f5f5;
+}
+
+.h-hi-ourprogram .hiopbox {
+	position: relative;
+	margin: 0 auto;
+	width: 100%;
+}
+
+.h-hi-ourprogram .hiopbox h6 {
+	position: absolute;
+	color: #fff;
+	font-size: 36px;
+	z-index: 9;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+
+/* End Homepage Our Programs CSS */
+
+.h-hi-street {
+	padding: 80px 25px;
+}
+
+.h-hi-street p {
+	font-size: 23px;
+}
+
+.h-hi-street .main-btn1 {
+	padding: 5px 25px 5px 10px;
+	font-size: 14px;
+}
+
+.h-vedio {
+	background-color: #C4C4C4;
+}
+
+.h-partners {
+	padding: 55px 25px;
+	background: #fff;
+}
+
+.h-partners .form-inline {
+	margin: 0 auto;
+	width: 80%;
+	justify-content: center;
+}
+
+.h-partners .form-inline input {
+	border: 1px solid #032350;
+	padding: 10px 15px;
+	border-radius: 5px;
+	width: 60%;
+}
+
+.h-partners .col-md-3 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.eneducatorbody .nav-link {
+	padding: 0.9rem 1rem!important;
+	font-size: 22px;
+	font-weight: 500;
+}
+
+.main-footer {
+	background: transparent;
+	overflow: hidden;
+	display: flex;
+	justify-content: flex-end;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	padding-top: 5px;
+	z-index: 999;
+}
+
+footer p {
+	padding: 30px 65px 40px 65px;
+	color: #fff;
+	position: relative;
+	z-index: 1;
+	top: 25px;
+	font-weight: 500;
+}
+
+footer p {
+	/*padding: 30px 50px 20px;color: #fff;position: relative;z-index:1;*/
+}
+
+.footer-social {
+	/*padding: 20px 40px 30px;
+	padding: 25px 65px 35px 65px;
+	position: relative;
+	z-index: 1;
+	top: 20px;*/
+}
+
+footer p:before {
+	content: '';
+	background: #FC6C21;
+	border-radius: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 200%;
+	z-index: -1;
+}
+
+.footer-social a {
+	margin: 0 5px;
+}
+
+.footer-social a img {
+	height: 20px;
+}
+
+.q-img {
+	width: 160px;
+}
+.iambox {
+    padding: 5rem 0 6rem;
+}
+
+.iambox h2 {
+	font-weight: 600;
+}
+
+#list {
+	position: sticky;
+	top: 170px;
+}
+
+.scroll-div a.active {
+	font-weight: bold;
+}
+
+.common_btn {
+	color: #FAFAFA !important;
+	background-color: #FC6C21;
+	border: 1px solid #FC6C21 !important;
+	text-align: center;
+	display: inline-block;
+	padding: 5px 15px;
+	border-radius: 5px;
+	cursor: pointer;
+	font-weight: 500;
+    margin-left: 20px;	
+}
+
+.iambox p,
+.tabstyle1 p {
+	line-height: 2.05rem;
+	font-size: 1.5rem!important;
+}
+
+.tabstyle1 .font-weight-semibold {
+	margin-bottom: .75rem;
+}
+
+.tabstyle1 .font-weight-normal {
+	margin-bottom: 2rem;
+}
+
+#teachersTab ul {
+	list-style: disc!important;
+}
+
+.bottom-space p:first-child {
+	margin-bottom: 2rem;
+}
+
+.tabstyle1 ul {
+	list-style: disc;
+	padding-left: 40px;
+}
+
+.tabstyle1 ul li {
+	font-weight: 400!important;
+	line-height: 2.05rem;
+	font-size: 1.5rem!important;
+}
+
+.tabstyle1 {
+	padding: 80px 0;
+}
+
+.h-hi-ourteam {
+	padding: 55px 25px;
+	background: #fff;
+}
+
+.h-hi-ourteam img {
+	width: 39%;
+}
+
+.h-hi-ourteam p {
+	line-height: 2.0rem;
+	font-size: 24px!important;
+	margin-bottom: 2.2rem;
+}
+
+.aboutbody .row {
+	padding: 90px 0;
+}
+
+.aboutbody p {
+	font-size: 24px;
+	margin-bottom: 2rem;
+}
+
+.aboutbody p:last-child {
+	margin-bottom: 0;
+}
+
+.aboutbody p strong {
+	margin-bottom: 0.5rem;
+	display: block;
+	font-weight: 600;
+}
+
+.aboutbody p br {
+	display: none;
+}
+
+.aboutbody ul {
+	list-style: none;
+	padding-left: 40px;
+}
+
+.aboutbody ul li {
+	font-weight: 400!important;
+	line-height: 2.05rem;
+	font-size: 1.5rem!important;
+	position: relative;
+}
+
+.aboutbody ul li:after {
+	content: '';
+	width: 4px;
+	height: 4px;
+	background: #000;
+	border-radius: 40px;
+	position: absolute;
+	left: -20px;
+	top: 13px;
+	overflow: hidden;
+}
+
+.aboutbody .aboutl ul {
+	padding-left: 0;
+}
+
+.aboutbody .aboutl ul li:after {
+	display: none;
+}
+
+.boxbtn {
+	height: 400px;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	border-radius: 5px;
+}
+
+.boxbtn a {
+	color: #fff;
+	font-size: 2.2rem;
+	font-weight: bold;
+	text-align: center;
+	width: 100%;
+	;
+	text-shadow: 0 3px #0000002e;
+}
+
+.boxbtn i {
+	color: #fff;
+}
+
+.boxbtn_lf {
+	background: #58C0E6;
+}
+
+.boxbtn_rg {
+	background: #EF145E;
+}
+
+.boxbtn_lf_purple {
+	background: #8A72E5;
+}
+
+.boxbtn_rg_green {
+	background: #49BC52;
+}
+.boxbtn.boxgreen{background: #49BC52;}
+.boxbtn.boxpurple{background: #8A72E5;}
+.boxbtn.boxred{background: #EF145E;}
+.boxbtn.boxblue{background: #58C0E6;}
+#sortable li {padding-right: 10px !important;}
+#flags.size18 a[title="Spanish"], .tool-container .tool-items a[title="Spanish"], a.single-language[title="Spanish"] span.size18 {background: none!important;}
+#flags.size18 a.united-states[title="English"], a.single-language.united-states[title="English"] span.size18 {background: none !important;}
+.fullbox {width: 100%;}
+.imgcontnentmbox {position: absolute;	top: 50%; left: 30%; transform: translate(-20%, -50%); color: #fff; font-size: 36px; font-weight: bold;}
+
+.imgmiddlebox {	position: relative;	width: 100%;text-align: center;}
+
+.aboutbody .row+.row {
+	padding-top: 0;
+}
+
+.aboutbody .aboutl ul {
+	padding-left: 0;
+}
+
+.donate_boxlist span {
+	width: calc(100% - 100px);
+	display: inline-block;
+}
+
+.donate_boxlist {
+	padding-left: 35px;
+}
+
+.donate_boxlist span {
+	font-weight: bold;
+	position: absolute;
+	left: 0px;
+}
+
+.musicM.aboutbody p strong {
+	margin-bottom: 0.5rem;
+	display: inline-block;
+	font-weight: 600;
+}
+
+.musicM.aboutbody .row {
+	padding: 70px 0;
+}
+
+.musicM.aboutbody .row+.row {
+	padding-top: 0;
+}
+/* styling date 23/11 homePage*/
+.h-join-now h2.big-text {
+    font-size: 36px;
+    font-weight: 600;
+}
+.h-hi-work h2{font-size: 36px;}
+.h-hi-ourprogram h2 {
+    font-size: 36px;
+    padding-bottom: 40px;	
+}
+.h-hi-ourprogram .row .col-md-5 {
+    padding: 0 15px !important;
+}
+.h-hi-street h2 {
+    font-size: 36px;
+}
+.h-hi-street .underline-link{text-decoration:none;position:relative;}
+.h-hi-street .underline-link:before {
+    content: '';
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    background: #322350;
+    bottom: 0;
+}
+.h-hi-street .col-md-11 span.ml-2 {
+    padding-left: 5px;
+}
+section.h-partners {
+    padding-top: 80px;
+}
+section.h-partners h2.big-text {
+    font-size: 36px;
+}
+.form-inline button.btn.main-btn1 {margin-left: 10px;padding: 15px 30px;}
+
+/* donate page */
+p.donate_list span {
+    display: inline-block;
+    width: 65px;
+	position:relative;
+}
+.donate_boxlist {
+	padding-bottom: 10px;
+}
+p.donate_list {
+    font-size: 18px;
+}
+section.cbody h2 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-top: 50px;
+}
+.form-group label[for="wantgive"] {
+    font-size: 22px;
+    font-weight: 600;
+}
+/* donate page End */
+
+	/* home page footer  */
+.footer-social a img {
+	height: 24px;
+}
+
+.main-footer .wp-block-group__inner-container > p > a {
+	color: #fff;
+	font-size: 20px;
+}
+
+.footer-social {
+	padding: 15px 0px 15px 0px;
+	position: relative;
+	z-index: 1;
+	top: 20px;
+}
+
+.footer-donate {
+	padding: 15px 0px 15px 0px;
+	position: relative;
+	z-index: 1;
+	top: 20px;
+}
+.footer-buttonssticky {
+    position: relative;
+    display: flex;
+    right: 120px;
+}
+.mc4wp-form-fields {
+    display: flex;
+    align-items: baseline;
+	justify-content: center;
+}
+.mc4wp-form-fields p input[type="submit"] {
+    background: #fc6c21;
+    color: #fff;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+}
+.mc4wp-form-fields p label input {
+    padding: 8px 10px;
+    border-radius: 5px;
+    border: 1px solid #032350;
+    width: 600px;
+    margin-right: 25px;
+}
+/* I am a student */
+.common_btn {
+    width: 150px !important;
+}
+section.studentpbody h2 {
+    font-size: 36px;
+}
+section.iambody h2 {
+    font-size: 36px;
+}

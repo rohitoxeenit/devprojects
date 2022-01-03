@@ -1,0 +1,42 @@
+@media only screen and (min-width: 768px){
+	
+}
+@media only screen and (max-width: 1198.98px){
+    .navbar-brand img {width: 180px;}
+	.navbar-expand-lg .navbar-nav .nav-link {margin-left: 1.5rem;}
+	
+}
+@media only screen and (max-width: 991.98px){
+    .carousel-itembox h4 {font-size: 40px;}
+    .h-join-now h2.big-text,.h-hi-work h2,.h-hi-ourprogram h2,.h-hi-street h2,section.h-partners h2.big-text,.h-partners h2.big-text {font-size: 30px;}
+    .h-hi-street p {font-size: 20px;}
+    .h-join-now p {font-size: 16px;}
+    .h-join-now p strong {font-size: 20px;}
+	.hibox a {font-size: 14px;}
+}
+@media only screen and (max-width: 767.98px){
+	#demo img {height: 300px !important;}
+	.main-btn1 {margin-left: 0;}
+	.carousel-itembox {position: absolute;z-index: 1;bottom: 0;top: 15vh;left: 10vh;}
+	.carousel-itembox h4 {color: #fff;font-weight: 900;font-size: 20px;}
+	[class*="col-"]:not(:last-child){margin-bottom : 20px;}
+	.h-join-now h2.big-text,.h-hi-work h2,.h-hi-ourprogram h2,.h-hi-street h2,section.h-partners h2.big-text,.h-partners h2.big-text {font-size: 24px;}
+	.h1, h1 {font-size: 1.5rem;}
+	.h2, h2 {font-size: 1.35rem;}
+	.h3, h3 {font-size: 1.3rem;}
+	.h-hi-ourprogram .hiopbox h6 {font-size: 18px;}
+	.h-hi-work h6 {ont-size: 14px;}
+	body,p,.h-join-now p,.h-join-now p strong,.h-hi-street p {font-size: 14px;}
+	.h-join-now p strong {font-size: 16px;}
+	.h-partners .form-inline {width: 100%;}
+	.h-partners .form-inline input {width: 100%;margin-bottom: 10px;}
+	footer p {padding: 30px 40px 20px;}
+	.navbar-brand img {max-width: 200px;}
+	.h-hi-work a {font-size: 14px;}
+	.h-hi-street h2 {font-size: 18px;}
+	.carousel-control-next-icon, .carousel-control-prev-icon {width: 25px;height: 25px;}
+	.carousel-control-next, .carousel-control-prev {width: 10%;}
+}
+@media only screen and (max-width: 575.98px){
+	
+}

@@ -1,0 +1,105 @@
+button#wpforms-submit-327603 {
+    color: #FFFFFF!important;
+    border-width: 0px!important;
+    letter-spacing: 2px;
+    font-size: 20px;
+    font-family: 'Poppins',Helvetica,Arial,Lucida,sans-serif!important;
+    font-weight: 600!important;
+    text-transform: uppercase!important;
+    background-color: #21cdc1;
+    border-radius: 15px 15px 0px 15px;
+    box-shadow: 0px 10px 30px 0px rgb(0 0 0 / 20%);
+    transition: letter-spacing 300ms ease 0ms;
+}
+#service-section .et_pb_row {
+    display: flex;
+}
+#service-section  .et_pb_module.et_pb_code {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #21cdc1d1;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+#service-section .et_pb_css_mix_blend_mode_passthrough:hover .et_pb_module.et_pb_code {
+display:flex;
+}
+.et_pb_fullwidth_header.et_pb_fullwidth_header_0 {
+    background-color: #7ab9c0!important ;
+}
+a.call {
+    font-size: 24px;
+    color: #FFF;
+    font-weight: 700;
+}
+.et_pb_image_6 {
+    margin-top: 0!important;
+}
+.et_pb_section_8 ul {
+    list-style: none !important;
+}
+.et_pb_section_8 ul li span {
+    font-size: 18px;
+    margin-bottom: 13px;
+    display: block;
+}
+p.p1 {
+    font-weight: 700;
+}
+.et_pb_section_8 a {
+    color: #666;
+}
+.et_pb_cta_0.et_pb_promo {
+    padding-top: 10px!important;
+}
+.et_pb_image_6 {
+    margin-top: 0!important;
+}
+.et_pb_column_21 {
+    padding: 30px !important;
+}
+body #page-container .et_pb_section .et_pb_cta_0.et_pb_promo .et_pb_promo_button.et_pb_button {
+    color: #fff !important;
+}
+
+//header
+
+<nav class="navbar">
+    <a class="navbar-brand" href="#"><img src="https://atkinscosmeticsurgery.com/wp-content/uploads/logo.png" alt="logo"/></a>
+  <span><a href="tel:+19185285338" class="call top-b">Call Now : +1 (918) 528-5338</a></span>
+  <span class="social">Follow Us On : <a href=""><i class="fab fa-facebook-f"></i></a>
+  <a href=""><i class="fa fa-twitter"></i></a>
+  </span>
+</nav>
+<style>
+  nav.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    width: 100%;
+}
+  a.call.top-b {
+    font-size: 26px;
+    color: #fff;
+     font-weight: 600;
+    padding: 0 10px;
+}
+  span.social {
+    font-size: 22px;
+    font-weight: 700;
+}
+  span.social a {
+    color: #fff;
+    padding-left: 15px;
+}
+  a.navbar-brand {
+    width: 280px;
+}
+</style>

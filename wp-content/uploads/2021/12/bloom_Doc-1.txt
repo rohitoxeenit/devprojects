@@ -1,0 +1,30 @@
+
+
+<<<<<<Bloom Document >>>>>>>
+ 
+ 1. Volunteer-form email is not in propper condition.
+ 2. Teacher application form submitted without resume and clickless checkboxes.
+ 3. a educator page side scroll bar is not working according to section scrolling.
+ 4. a educator page APPLY BUTTON LINKING is not on right page.
+ 5. a educator page Questions? Contact us linking is not on right page.
+ 6. http://oxeenit.tech/bloomnew/i_am_educator/our-teachers/ our team,program and apply button linking .
+ 7. About dropdown clicks on tabs related section is not open properly.
+ 8. http://oxeenit.tech/bloomnew/i_am_educator/programs/ Lets chat button is not
+	link to related page. APPLY button also not link to related page.
+ 9.http://oxeenit.tech/bloomnew/i_am_educator/music-movement/ our teacher green  box anchor is not link.
+ 10.http://oxeenit.tech/bloomnew/i_am_educator/pricing/ Bottom box linking.
+ 11. http://oxeenit.tech/bloomnew/partner-inquiry-form/  Form is not submitted after entering values.
+ 12. http://oxeenit.tech/bloomnew/contact/ In the form message is mendetory feild but form is submitted without fill this feild.
+ 13. "Stay in the know" Inline form thank you message is not in proper layout.
+ 
+ <<<<<<<<<<Bloom Responsive>>>>>>>>>>>>
+ 
+1. http://oxeenit.tech/bloomnew/i_am_educator/programs/ remove extra white space. Buttons should be center align.
+2. http://oxeenit.tech/bloomnew/donate/ remove extra white space and set the images and button should be center align.
+3.http://oxeenit.tech/bloomnew/contact/ , need to some bottom space on Let's chat button and align submit button and its extra white space.
+4. http://oxeenit.tech/bloomnew/volunteer-form/ , align submit button and other input feild.
+5. http://oxeenit.tech/bloomnew/teacher-application-form/ , upload file button is not responsive.
+6. http://oxeenit.tech/bloomnew/looking-to-help/ , all buttons should be center align.
+7. http://oxeenit.tech/bloomnew/i_am_educator/programs/ , review the issue of extra white space.
+8. Extra white space issue is on every page , check it and remove it.
+ 
